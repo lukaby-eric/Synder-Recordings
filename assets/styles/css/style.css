@@ -83,8 +83,8 @@ h3{
     position: fixed;
     right: 5%;
     top: 10px;
-    background-color: #B8BFCF;
-    color: #001D5D;
+    background-color: #001D5D;
+    color: #B8BFCF;
     border: none;
     outline: none;
     padding: 5px 10px;
@@ -94,8 +94,8 @@ h3{
     z-index: 333;
 }
 #menu-bar:hover{
-    color: #B8BFCF;
-    background-color: #001D5D;
+    color: #001D5D;
+    background: #B8BFCF;
 }
 #check-btn{
     display: none;
