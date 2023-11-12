@@ -196,6 +196,7 @@
 @media only screen and (max-width: 400px){
     #home .container{
         padding: 50px 0;
+        padding-top: 100px;
     }
     #home .container .home-text h1{
         font-size: 2em;
