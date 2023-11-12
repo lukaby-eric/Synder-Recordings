@@ -1,0 +1,478 @@
+*{
+    box-sizing: border-box;
+    transition: .4s;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'inter';
+}
+p{
+    color: #777777;
+}
+h2{
+    font-size: 2em;
+    color: #001D5D;
+    font-weight: 999;
+    margin-bottom: 10px;
+}
+h3{
+    color: #001D5D;
+    font-size: 1.4em; 
+    font-weight: 900;
+}
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+                                        NAVBAR 
+                                        @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+.navbar{
+    position: fixed;
+    background-color: white;
+    padding: 8px 5%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 100%;
+    z-index: 222;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 0px 8px #77777741;
+}
+.navbar .logo{
+    margin-right: 80px;
+}
+.navbar .nav-links{
+    text-align: center;
+}
+.navbar .nav-links ul{
+    display: flex;
+    margin-top: 8px;
+}
+.navbar .nav-links ul li {
+    display: flex;
+    align-items: center;
+}
+.navbar .nav-links ul li a{
+    margin-left: 80px;
+    color: #001D5D;
+}
+.navbar .nav-links ul li a:hover{
+    color: #010f2e;
+    transform: scale(1.1,1);
+}
+.navbar .nav-links ul li a img{
+    transform: translate(-1px,2px);
+}
+.navbar .nav-links ul li button{
+    margin-left: 80px;
+}
+.navbar .signup button{
+    float: right;
+    background-color: #D9F0D0;
+    color: #42A418;
+    border: none;
+    outline: none;
+    padding: 8px 40px;
+    margin-top: 6px;
+    cursor: pointer;
+}
+.navbar .signup button:hover{
+    color: #b0f395;
+    background: #42A418;
+    transform: scale(1.1,1);
+}
+#menu-bar{
+    position: fixed;
+    right: 5%;
+    top: 10px;
+    background-color: #B8BFCF;
+    color: #001D5D;
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    font-size: 25px;
+    display: none;
+    cursor: pointer;
+    z-index: 333;
+}
+#menu-bar:hover{
+    color: #B8BFCF;
+    background-color: #001D5D;
+}
+#check-btn{
+    display: none;
+}
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+                                        HOME 
+                                        @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+#home .container{
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    padding: 150px 0;
+    position: relative;
+    overflow: hidden;
+}
+#home .container img{
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    object-fit: cover;
+    animation: backgroun 70s linear infinite;
+}
+@keyframes backgroun {
+    0%{
+        transform: scale(1,1);
+    }
+    25%{
+        transform: scale(1.1,1.1);
+    }
+    50%{
+        transform: scale(1.2,1.2);
+    }
+    75%{
+        transform: scale(1.1,1.1);
+    }
+    100%{
+        transform: scale(1,1);
+    }
+}
+#home .container .home-text{
+    margin: 0 10%;
+    width: 50%;
+    color: white;
+}
+#home .container .home-text h1{
+    font-size: 4.5em;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+#home .container .home-text h5{
+    font-size: 1.2em;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+#home .container .home-text button{
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    background-color: white;
+    color: #001D5D;
+    padding: 15px 18px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+#home .container .home-text b{
+    font-weight: 600;
+}
+#home .container .home-text span:hover{
+    color: #B8BFCF;
+    cursor: pointer;
+}
+#home .container .home-text span:hover #watch{
+    margin-left: 10px;
+}
+#home .container .home-text span:hover #play{
+    background: linear-gradient(rebeccapurple,rgb(153, 89, 218));
+    color: white;
+}
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+                                        ARTIST 
+                                        @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+#artist .container{
+    margin: 8%;
+}
+#artist .container .row{
+    display: grid;
+    grid-auto-columns: minmax(0, 1fr); 
+    grid-auto-flow: column;
+    position: relative;
+    height: 100%;
+}
+#artist .container .row .col1{
+    height: 100%;
+    width: 100%;
+    background:url(../../Images/aHR0cDovL2ltYWdlLmloZWFydC5jb20vaW1hZ2VzL3JvdmkvMTA4MC8wMDA0LzMyNy9NSTAwMDQzMjcxNjAuanBn.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#artist .container .row .col2{
+    margin-left: 20px;
+    font-size: 1.493rem;
+}
+#artist .container .row .col2 button{
+    background-color: #D9F0D0;
+    color: #42A418;
+    border: none;
+    outline: none;
+    padding: 8px 40px;
+    margin-top: 42px;
+    cursor: pointer;
+}
+#artist .container .row .col2 button:hover{
+    color: #b0f395;
+    background: #42A418;
+    transform: scale(1.1,1);
+}
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+                                        MUSIC 
+                                        @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+#music{
+    position: relative;
+    background: #F6F6F6;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 30px;
+}
+#music .container .title{
+    padding: 5%;
+}
+
+.slides-show{
+    height: 400px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.slides{
+    height: 300px;
+    width: 100%;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    text-align: left;
+}
+.slide{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    
+}
+.slide-content{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.slide-img img{
+    margin: 30px;
+    height: 200px;
+    height: 200px;
+}
+.slide-text{
+    margin: 20px;
+}
+.slide-text h5{
+    color: #42A418;
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+.slide-controls{
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+    z-index: 11;
+}
+.slide1, .slide2, .slide3{
+    background-color: white;
+    box-shadow: 1px 1px 4px #0000;
+    cursor: pointer;
+}
+.slide1{
+    position: absolute;
+    width: 60%;
+    height: 100%;
+}
+.slide2{
+    position: absolute;
+    opacity: 0.5;
+    width: 60%;
+    height: 100%;
+    margin-left: -125%;
+}
+.slide3{
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    margin-right: -125%;
+    opacity: 0.5;
+}
+.slide-controls button{
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    background-color: #B8BFCF;
+    font-size: 25px;
+    color: #001D5D;
+    padding: 10px 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.slide-controls button:hover{
+    transform: scale(1.05,1.05);
+    background: #001D5D;
+    color: #F6F6F6;
+}
+
+.control1{
+    display: block;
+}
+.control2{
+    display: none;
+}
+.control3{
+    display: none;
+}
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+                                        MAP 
+                                        @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+.map{
+    height: 450px;
+    width: 100%;
+}
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+                                        CONTACT 
+                                        @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+#contact{
+    background: white;
+}
+
+#contact .container .row{
+    display: grid;
+    grid-template-columns: auto auto;
+    position: relative;
+}
+#contact .container .row .col1{
+    height: 100%;
+    width: 100%;
+    padding: 5% 10%;
+}
+#contact .container .form-grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 30px;
+}
+#contact .container .form-grid input,select{
+    width: 94%;
+    padding: 10px 20px;
+    outline: none;
+    border: 1px solid grey;
+
+}
+#contact .container .form-grid input:hover,select:hover{
+    border: 1.6px solid #001D5D;
+}
+#contact .container .form-grid input:hover::placeholder,select:hover::placeholder{
+    color: #001D5D;
+}
+#contact .container .form-grid input:focus,select:focus{
+    border: 1.6px solid #001D5D;
+}
+#contact .container label{
+    color: #777777;
+    margin-top: 20px;
+}
+#contact .container textarea{
+    width: 97%;
+    padding: 10px 20px;
+    outline: none;
+    border: 1px solid grey;
+    color: #001D5D;
+
+}
+#contact .container textarea:focus{
+    border: 1.6px solid #001D5D;
+
+}
+#contact .container textarea:hover{
+    border: 1.6px solid #001D5D;
+}
+#contact .container textarea:hover::placeholder{
+    color: #001D5D;
+}
+#contact .container .row .col2{
+    height: 100%;
+    width: 100%;
+    background: url(../../Images/harry-swales-0l0KjNoAfAk-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    right: 0;
+}
+
+#contact .container button{
+    background-color: #D9F0D0;
+    color: #42A418;
+    border: none;
+    outline: none;
+    padding: 10px 40px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+#contact .container button:hover{
+    color: #b0f395;
+    background: #42A418;
+    transform: scale(1.1,1);
+}
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+                                        FOOTER 
+                                        @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+#footer{
+    background: #001D5D;
+}
+#footer .container{
+    margin: 0 7%;
+    color: rgba(255, 255, 255, 0.946)
+}
+#footer .container .row{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    padding: 40px 0;
+}
+#footer .container .row li{
+    padding: 5px;
+}
+#footer .container .row li:hover{
+    font-weight: bold;
+    color: rgb(72, 111, 149);
+    cursor: pointer;
+}
+#footer .container .last-row{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 20px 0;
+    border-top: 2px solid rgb(72, 111, 149);
+}
+#footer .container .last-row .col-1 li{
+    float: left;
+    margin-right: 70px;
+    cursor: pointer;
+}
+#footer .container .last-row .col-1 li:hover{
+    letter-spacing: 1px;
+    color: rgb(72, 111, 149);
+}
+#footer .container .last-row .col-2 ul{
+    float: right;
+}
+#footer .container .last-row .fa{
+    font-size: 1.5em;
+    margin-left: 20px;
+    cursor: pointer;
+}
+#footer .container .last-row .fa:hover{
+    transform: scale(1.2,1.2);
+    color: rgb(72, 111, 149);
+}

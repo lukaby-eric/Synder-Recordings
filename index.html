@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles/css/style.css">
+    <link rel="stylesheet" href="assets/styles/css/responsiveness.css">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="icon" type="image/x-icon" href="assets/Images/Logos/icon.png">
+    <title>Synder Recordings</title>
+</head>
+<body>
+<!-------------------------------------------- 
+                                              NAVBAR 
+                                              -------------------------------------------->
+    <input type="checkbox" id="check-btn">
+    <label for="check-btn" id="menu-bar" class="fa fa-bars"></label>
+    <div class="navbar">
+        <div class="logo">
+            <img src="assets/Images/Logos/Logo-Blue.svg" alt="">
+        </div>
+        <div class="nav-links">
+            <ul id="myUl">
+                <li><a href="#"><img src="assets/styles/Icons/Nav Icons/Home.svg" alt=""> Home</a></li>
+                <li><a href="#"><img src="assets/styles/Icons/Nav Icons/Record.svg" alt=""> Records</a></li>
+                <li><a href="#"><img src="assets/styles/Icons/Nav Icons/Music Note.svg" alt=""> Music</a></li>
+                <li><a href="#"><img src="assets/styles/Icons/Nav Icons/People.svg" alt=""> Artists</a></li>
+                <li><a href="#"><img src="assets/styles/Icons/Nav Icons/Calendar.svg" alt=""> Conserts</a></li>
+            </ul>
+        </div>
+        <div class="signup"><Button>Sign Up</Button></div>
+    </div>
+    <!-------------------------------------------- 
+                                              HOME 
+                                              -------------------------------------------->
+    <section id="home">
+        <div class="container">
+            <img src="assets/Images/marcela-laskoski-YrtFlrLo2DQ-unsplash.jpg" alt="" id="home-bd">
+            <div class="home-text">
+                <h1>A.M. Paradox</h1>
+                <h5 data-aos="fade-in">Christopher Brent Wood, better known by his stage name Brent Faiyaz, is
+                    an American singer and record producer. He released his debut project, 
+                    an extended play entitled A.M. Paradox, in 2016.</h5>
+                <span><button id="play" class="fa fa-play"></button> <b id="watch">Watch Video</b></span>
+            </div>
+        </div>
+    </section>
+    <!-------------------------------------------- 
+                                            Artist 
+                                            -------------------------------------------->
+    <section id="artist">
+        <div class="container">
+            <div class="row">
+                <div class="col1">
+                    
+                </div>
+                <div class="col2" data-aos="zoom-in">
+                    <h2>Brent Faiyaz, So <br>
+                        Far Gone</h2> <br>
+
+                        <p>Faiyaz began uploading his music onto SoundCloud in 2014 and moved
+                        from his hometown Columbia, Maryland to Charlotte, 
+                        North Carolina before ultimately settling in Los Angeles, 
+                        California to further his music career.  On January 19, 2015, 
+                        he released his debut single "Allure". On June 1, 2016, Faiyaz released
+                        "Invite Me", the lead single from his upcoming debut EP. On September
+                        19, 2016, his 21st birthday, the EP entitled A.M. Paradox was 
+                        released and received with positive reviews from music critics.
+                        On January 26, 2017, Sonder released their debut EP Into.</p>
+                    <button>Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--------------------------------------------
+                                                  MUSIC 
+                                                  -------------------------------------------->
+     <section id="music">
+        <div class="container">
+            <div class="title" data-aos="slide-up">
+                <h2>New Releases</h2>
+                <p>New albums every single month, 
+                check out the newest & best from <br>Snyder Recording artist, 
+                now available on Apple Music & Spotify.</p>
+            </div>
+            <div class="slides-show">
+                <div class="slides" data-aos="zoom-in">
+                    <div class="slide slide1">
+                        <div class="slide-content">
+                            <div class="slide-img">
+                                <img src="assets/Images/71RLkNIuZNL._SY355_.jpg" alt="">
+                            </div>
+                            <div class="slide-text">
+                                <h3>Trapsoul</h3>
+                                <h5>Bryson Tiller</h5>
+                                <p>Bryson Djuan Tiller, is an American singer, songwriter and rapper. 
+                                Born in Louisville, Kentucky, he started his career in 2011, 
+                                releasing the debut mixtape titled Killer Instinct Vol.1.</p> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide slide2">
+                        <div class="slide-content">
+                             <div class="slide-img">
+                                        <img src="assets/Images/71RLkNIuZNL._SY355_.jpg" alt="">
+                                    </div>
+                                    <div class="slide-text">
+                                        <h3>Trapsoul</h3>
+                                        <h5>Bryson Tiller</h5>
+                                        <p>Bryson Djuan Tiller, is an American singer, songwriter and rapper. 
+                                        Born in Louisville, Kentucky, he started his career in 2011, 
+                                        releasing the debut mixtape titled Killer Instinct Vol.1.</p> 
+                                    </div>
+                        </div>
+                    </div>
+                    <div class="slide slide3">
+                        <div class="slide-content">
+                             <div class="slide-img">
+                                        <img src="assets/Images/71RLkNIuZNL._SY355_.jpg" alt="">
+                                    </div>
+                                    <div class="slide-text">
+                                        <h3>Trapsoul</h3>
+                                        <h5>Bryson Tiller</h5>
+                                        <p>Bryson Djuan Tiller, is an American singer, songwriter and rapper. 
+                                        Born in Louisville, Kentucky, he started his career in 2011, 
+                                        releasing the debut mixtape titled Killer Instinct Vol.1.</p> 
+                                    </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-controls">
+                    <div class="control1">
+                        <button onclick="controlOneLeft()" class="slide1-left fa fa-angle-left"></button>
+                        <button onclick="controlOneRight()" class="slide1-right fa fa-angle-right"></button>
+                    </div>
+                    <div class="control2">
+                        <button onclick="controlTwoLeft()" class="slide2-left fa fa-angle-left"></button>
+                        <button onclick="controlTwoRight()" class="slide2-right fa fa-angle-right"></button>
+                    </div>
+                    <div class="control3">
+                        <button onclick="controlThreeLeft()" class="slide3-left fa fa-angle-left"></button>
+                        <button onclick="controlThreeRight()" class="slide3-right fa fa-angle-right"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-------------------------------------------- 
+                                              MAP 
+                                              -------------------------------------------->
+    <section class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12405.777765799086!2d-94.67648578395139!3d38.982351878792144!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87c0eb66d3f79dd9%3A0xa7a51cba69767a7e!2sLifted%20Logic!5e0!3m2!1sen!2sus!4v1699723045549!5m2!1sen!2sus" width="100%" height="100%" style="border:0; filter:hue-rotate(55deg);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+<!-------------------------------------------- 
+                                              contact 
+                                              -------------------------------------------->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col1">
+                    <div class="col1-content" data-aos="slide-up">
+                        <h2>Get In Touch</h2>
+                        <p>New album every single month, check out the newest & best from snyder Recording artist, now available
+                            on Apple Music & Spotify.
+                        </p>
+                        <form action="#">
+                            <div class="form-grid">
+                                <div class="column1">
+                                    <label for="">First Name</label><br>
+                                    <input type="text" placeholder="First Name" required><br><br>
+                                    <label for="">Email Address</label><br>
+                                    <input type="email" placeholder="Email Address" required>
+                                </div>
+                                <div class="column2">
+                                    <label for="">Last Name</label><br>
+                                    <input type="text" placeholder="Last Name" required><br><br>
+                                    <label for="">Reason for Contacting</label><br>
+                                    <select name="" id="" required>
+                                        <option value="Select One">Select One</option>
+                                        <option value="Select One">Buy Tickets</option>
+                                        <option value="Select One">Joint Fan Club</option>
+                                        <option value="Select One">Request Information</option>
+                                        <option value="Select One">Other...</option>
+                                    </select>
+                                </div>
+                            </div><br>
+                            <label for="">Message (Optional)</label><br>
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Write a brief message..."></textarea><br>
+                            <button>Learn More</button>
+                            
+                        </form>
+                    </div>
+                </div>
+                <div class="col2"></div>
+            </div>
+        </div>
+    </section>
+    <!-------------------------------------------- 
+                                                  Footer 
+                                                  -------------------------------------------->
+    <section id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-1">
+                    <ul>
+                        <li><img src="assets/Images/Logos/Logo-White.svg" alt=""></li>
+                        <li>8521 W Fairfax Rd <br> Los Angeles,CA</li>
+                        <li>990210</li>
+                        <li>(909) 505 4302</li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <ul>
+                        <li>EXPLORE</li><br>
+                        <li>About Us</li>
+                        <li>Our Story</li>
+                        <li>Team</li>
+                        <li>Careers</li>
+                        <li>FAQ</li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <ul>
+                        <li>MUSIC</li><br>
+                        <li>Missing Out</li>
+                        <li>Trapsoul</li>
+                        <li>Sonder Sons</li>
+                        <li>Paradise Today</li>
+                        <li>Needed</li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <ul>
+                        <li>ARTISTS</li><br>
+                        <li>Brent Faiyaz</li>
+                        <li>Drake</li>
+                        <li>Bryson Ford</li>
+                        <li>Young Ford</li>
+                        <li>Roy Fresco</li>
+                    </ul>
+                </div>
+                <div class="col-5">
+                    <ul>
+                        <li>RECORDS</li><br>
+                        <li>What a Time</li>
+                        <li>Coming Home</li>
+                        <li>Always First</li>
+                        <li>So Far Gone</li>
+                        <li>Big Bluez</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="last-row">
+                <div class="col-1">
+                    <li>Privacy Policy</li>
+                    <li>Terms & Conditions</li>
+                </div>
+                <div class="col-2">
+                    <ul>
+                        <li class="fa fa-instagram"></li>
+                        <li class="fa fa-youtube-play"></li>
+                        <li class="fa fa-twitter"></li>
+                        <li class="fa fa-facebook"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="assets/styles/js/script.js"></script>
+    
+</body>
+</html>
